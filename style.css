@@ -1,0 +1,222 @@
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0 !important;}
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 40px;
+	line-height: 40px;
+	letter-spacing: -1px;
+	font-weight:normal;
+}
+
+.large, h2 {
+	font-size: 24px;
+	line-height: 48px;
+	font-weight:normal;
+}
+
+.big, h3 {
+	font-size: 26px;
+	line-height: 36px;
+      	font-weight:normal;
+        margin:2em;
+}
+
+.normal, body {
+	font: 16px/24px Georgia, "Times New Roman", serif;
+}
+
+.small {
+	font-size: 12px !important;
+	line-height: 18px !important;
+        margin:0;
+} 
+
+body {
+	background: url(img/bg.jpg) no-repeat center -10px #000;
+	padding: 0;
+	color:#fff;
+}
+
+::selection 	 	{background: rgb(255,255,0);}
+::-moz-selection 	{background: rgb(255,255,0);}
+img::selection 		{background: transparent;}
+img::-moz-selection {background: transparent;}
+
+a {
+	color:#000;
+	text-decoration:none;
+	border-bottom:1px dotted #000;
+}
+
+a:hover {
+	background:#000;
+	color:#fff;
+	border:0;
+}
+
+p {
+	margin:0 0 1.2em 0;
+}
+
+
+#header {
+	position:relative;
+	height:460px;
+	margin:0 auto;
+	width:960px;
+	}
+
+#header div {
+	position:absolute;
+	top:186px;
+	right:40px;
+	width:560px;
+}
+
+#supported h2 {margin-top:16px !important;}
+
+#supported a:hover, #header a {background:none; border-bottom:0;}
+
+#supported a {
+	border-bottom:0 !important;
+}
+
+
+
+#content {
+	width:960px;
+	margin:0 auto;
+}
+
+#content h2 {
+	text-align:right;
+	width:300px;
+	margin:0;
+	float:left;
+	padding:0;
+	line-height:24px;
+}
+
+#content p, #content #disqus_thread {
+	float:right;
+	width:600px;
+}
+
+#content section {
+	clear:both;
+	min-height:60px;
+	padding:30px 0 0 0;
+}
+
+#header div p {
+	margin:20px 0;
+	font-size:22px;
+	line-height:24px;
+}
+
+#header div a {
+	float:left;
+	padding:10px 35px 8px 60px;
+	background:#fff;
+	margin:0 20px 20px 0;
+	-webkit-border-radius:3px;
+        -moz-border-radius:3px;
+        border-radius:3px;
+	line-height:16px;
+	color:#000;
+	border:0
+}
+
+#header div a:hover {
+	-webkit-box-shadow:0 0 15px rgb(255,0,255);
+	-moz-box-shadow:0 0 15px rgb(255,0,255);
+  box-shadow:0 0 15px rgb(255,0,255);
+	background:#fff;
+}
+
+#header div a span {
+	display:block; 
+	font-size:12px;
+	color:#444;
+	font-style:italic;
+}
+
+#header div a.download {
+	background:url(img/download.png) no-repeat 12px 8px #fff;
+}
+
+#header div a.fork {
+	background:url(img/fork.png) no-repeat 12px 8px #fff;
+}
+
+#header div a.google {
+	background:url(img/google.png) no-repeat 12px 8px #fff;
+}
+
+#footer {
+	font-size:13px;
+	font-style:italic;
+	color:#666;
+}
+
+#footer p:first-child {
+  border-top:1px dotted #ddd;
+  padding-top:15px;
+  font-size:12px;
+  line-height:19px;
+}
+
+#main {
+	background:#fff;
+	color:#111;
+	padding:10px 0 40px 0;
+  min-height:800px;
+}
+
+#header a.nav {
+  color:#fff;
+  margin:20px 0 0 60px;
+  float:left;
+  padding:5px 10px;
+  font-size:24px;
+}
+
+#header a.nav:hover {
+  background:#000;
+  color:#fff;
+}
+
+
+
+section:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+* html section,*:first-child+html section{zoom:1}
+
+
