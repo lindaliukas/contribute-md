@@ -60,7 +60,7 @@ a img {border: 0 !important;}
 } 
 
 body {
-	background: url(img/bg.jpg) no-repeat center -10px #000;
+	background: url(../images/bg.jpg) no-repeat center -10px #000;
 	padding: 0;
 	color:#fff;
 }
@@ -84,6 +84,12 @@ a:hover {
 
 p {
 	margin:0 0 1.2em 0;
+}
+
+pre {
+  font: 12px Consolas, monospace;
+  float: right;
+  width: 600px;
 }
 
 
@@ -170,15 +176,15 @@ p {
 }
 
 #header div a.download {
-	background:url(img/download.png) no-repeat 12px 8px #fff;
+	background:url(../images/download.png) no-repeat 12px 8px #fff;
 }
 
 #header div a.fork {
-	background:url(img/fork.png) no-repeat 12px 8px #fff;
+	background:url(../images/fork.png) no-repeat 12px 8px #fff;
 }
 
 #header div a.google {
-	background:url(img/google.png) no-repeat 12px 8px #fff;
+	background:url(../images/google.png) no-repeat 12px 8px #fff;
 }
 
 #footer {

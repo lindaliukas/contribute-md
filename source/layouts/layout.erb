@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title><%= data.page.title %></title>
+
+  <meta name="description" content="Contribute.md - make your open source project awesome">
+  <meta name="author" content="Terence Lee / http://hone.heroku.com/ and Linda Liukas / http//www.lindaliukas.fi">
+  <meta property="og:image" content="make this" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag "style" %>
+  <link rel="stylesheet" media="all" href="style.css"/>
+</head>
+
+<body>
+  <div id="header">
+    
+    <div>
+      <h1>Contribute.md</h1> 
+
+      <p>Contribute.md is an initiative to get more awesome people involved in open source projects. It’s a tiny markdown file that lives inside your project repository and welcomes people to take part.</p>
+
+      <a href="/" class="download" onClick="_gaq.push(['_trackEvent', 'Documents', 'Download']);">Download<span> Contribute.md </a> 
+      <a target="_blank" href="/" class="fork" onClick="_gaq.push(['_trackEvent', 'Documents', 'Github']);">Fork on<span>Github</span></a>
+    </div>
+  </div>
+  
+  <%= yield %>
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20918684-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
