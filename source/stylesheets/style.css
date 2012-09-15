@@ -92,6 +92,16 @@ pre {
   width: 600px;
 }
 
+h4 {
+  float: right;
+  width: 600px;
+  margin-top: 20px;
+}
+
+ul {
+  float: right;
+  width: 600px;
+}
 
 #header {
 	position:relative;
